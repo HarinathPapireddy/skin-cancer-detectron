@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Skin Lesion Analyser</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/static/assets/img/favicon.png" rel="icon">
+  <link href="/static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/static/assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-left justify-content-between">
+
+      <a  class="logo d-flex align-items-center container m-0">
+        <h1 style="font-size: 6rem">Skin Lesion Analyser<span>.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero" >
+
+    <div class="info d-flex align-items-center">
+      <div class="container" id="skinLesion" >
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down" data-aos-delay="50ms">Welcome to <span>Skin Lesion Analyser</span></h2>
+            <p data-aos="fade-up">Unlocking the Future of Dermatological Diagnosis: Empowering Precision Medicine with Cutting-Edge Skin Lesion Analysis</p>
+            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" >
+
+      <div class="carousel-item active" style="background-image: url(/static/assets/img/hero-carousel/hero-carousel-1.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
+
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="get-started section-bg" style="background-image: url('/home/harinath/Documents/SkinCancerDetectron/static/assets/img/getStartedSection.jpg');">
+      <div class="container" >
+
+        <div class="row justify-content-between gy-4">
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <div >
+              <h3>Unlock the Power of AI in Skin Lesion Analysis.</h3>
+              <p>"Our state-of-the-art skin lesion analysis platform leverages advanced machine learning models to deliver unparalleled accuracy and efficiency in diagnosing skin lesions. Using a sophisticated convolutional neural network (CNN) architecture, our model is trained on a vast dataset of dermatological images, enabling it to recognize and classify various types of skin lesions with remarkable precision"
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade">
+              <h3>To start analyse your skin Click below button or Scroll Down</h3>
+                 <a href="#container" > <button class="button" role="button">Start the model</button></a>
+                </div>
+          </div><!-- End Quote Form -->
+        </div>
+      </div>
+    </section><!-- End Get Started Section -->
+<section class="container" id="container">
+
+    <header>
+      <h1>Skin Lesion Analyzer</h1>
+      <p>Early detection through AI-powered analysis.</p>
+    </header>
+    <div class="content">
+      <form id="uploadForm">
+        <div class="upload-area">
+          <div class="dropzone">
+            <p>Drag & Drop your video or image here</p>
+            <p>OR</p>
+            <label for="fileInput">
+              <input type="file" id="fileInput" accept="video/*,image/*">
+              Browse Files
+            </label>
+          </div>
+          <div class="progress-bar hidden">
+            <div class="progress"></div>
+          </div>
+          <div id="loadingIndicator" style="display: none;"></div>
+        </div>
+        <div class="result hidden">
+          <h3>Analysis Result:</h3>
+          <img id="analyzedImage" src="" alt="Analyzed Image" style="display: none;">
+          <p id="prediction"></p>
+          
+        </div>
+      </form>
+    </div>
+  </section>
+       
+ 
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/vendor/aos/aos.js"></script>
+  <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+</html>
